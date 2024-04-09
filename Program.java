@@ -76,10 +76,20 @@ public class Program {
         MyLinkedList<String> myLinkedList = new MyLinkedList<String>();
         myLinkedList.AddFront("World!");
         myLinkedList.AddFront("Hello");
-        myLinkedList.AddFront("This is me");
+        myLinkedList.AddFront("This");
         myLinkedList.AddFront("Hi");
         myLinkedList.Append("Dog");
         System.out.println(myLinkedList.GetSize());
+        System.out.println(myLinkedList);
+        myLinkedList.Insert(1,"Leaf");
+        System.out.println(myLinkedList);
+        myLinkedList.DeleteFront();
+        System.out.println(myLinkedList);
+        myLinkedList.Append("Cat");
+        System.out.println(myLinkedList);
+        myLinkedList.Append("Gato");
+        System.out.println(myLinkedList);
+        myLinkedList.DeleteNodeBasedOnValue("Hello");
         System.out.println(myLinkedList);
     }
 
