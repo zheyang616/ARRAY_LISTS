@@ -1,11 +1,10 @@
 //Bonnie Bao and Zhe Yang
 
 package ARRAY_LISTS;
-
 public class Node<T> {
     T data;
     Node<T> next;
-    Node<T> prev; // Reference to the previous node
+    Node<T> prev;
 
     // Constructor to initialize the node's data without any references
     public Node(T dt) {
