@@ -1,6 +1,6 @@
 //Bonnie Bao and Zhe Yang
 
-package ARRAY_LISTS;
+
 public class Node<T> {
     T data;
     Node<T> next;
@@ -13,10 +13,18 @@ public class Node<T> {
         prev = null;
     }
 
+    public Node(T dt, Node<T> next) {
+        data = dt;
+        this.next = next;
+
+    }
+
     // Constructor to initialize the node's data with references to next and previous nodes
     public Node(T dt, Node<T> next, Node<T> prev) {
         data = dt;
         this.next = next;
         this.prev = prev;
     }
+
+
 }
